@@ -1,0 +1,15 @@
+public class EmployeeTest {
+    public static void main(String[] args) {
+        Employee[] staff = new Employee[3];
+
+        staff[0]=new Employee("Carl Cracer", 75000, 1987, 12 , 15);
+        staff[1]= new Employee("Hary Hacker", 50000, 1989, 10, 1);
+        staff[2]=new Employee("Tony Tester", 35000, 1990, 8, 20);
+
+        for(Employee e : staff)
+            e.rizeSalary(5);
+
+        for(Employee e : staff)
+            System.out.println("name="+e.getName+",salary"+e.getSalary()+",hireDay="+e.getHireDay());
+    }
+}
